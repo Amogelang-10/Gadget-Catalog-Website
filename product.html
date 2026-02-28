@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Tech Trolley</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo"><i class="bx bxs-shopping-bag-alt"></i>Tech Trolley</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="project.html" class="nav-link active">Home</a></li>
+              <li><a href="product.html" class="nav-link">Products</a></li>
+              <li><a href="favourites.html"class="nav-link">Favourites</a></li>
+              <li><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <div class="nav-search-box">
+          <input type="text" id="search-input" placeholder="Search Products" required />
+          <button id="search-btn">Search</button>
+        </div>
+        <i class='bx bx-cart'></i>
+        <i class='bx bx-user'></i>
+      </div>
+    </div>
+  </header>
+
+    
+  <section id="products" class="products-section">
+    <div class="section-header">
+        <h2>Our Products</h2>
+        <p>Browse our wide selection of premium tech gadgets and accessories</p>
+    </div>
+    
+    <div class="product-filters" style="text-align: center; margin-top: 2rem; ">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="laptops">Laptops</button>
+        <button class="filter-btn" data-filter="headphones">Headphones</button>
+        <button class="filter-btn" data-filter="airpods">AirPods</button>
+        <button class="filter-btn" data-filter="watches">Watches</button>
+    </div>
+
+    <div id="product-grid" class="product-grid"></div>
+<div id="product-details" class="product-details-section"></div>
+    </section>
+  
+
+  <script defer src="scripts.js"></script>
+</body>
+</html>
+
+  

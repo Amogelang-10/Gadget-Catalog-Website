@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Trolley</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <style>
+   .footer{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: unset;
+   }
+
+   .favorites-section {
+   margin: 1rem;
+   }
+   .product-card{
+    margin: 3px;
+   }
+
+  </style>
+</head>
+<body>
+ <header>
+        <div class="header-container">
+          <a href="#" class="logo"><i class="bx bxs-shopping-bag-alt"></i>Tech Trolley</a>
+    
+          <nav class="navbar">
+            <ul>
+              <li><a href="project.html" class="nav-link active">Home</a></li>
+              <li><a href="product.html" class="nav-link">Products</a></li>
+              <li><a href="favourites.html"class="nav-link">Favourites</a></li>
+              <li><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-icons">
+            <div class="nav-search-box">
+              <input type="text" id="search-input" placeholder="Search Products" required />
+              <button id="search-btn">Search</button>
+            </div>
+            <i class='bx bx-cart'></i>
+            <i class='bx bx-user'></i>
+          </div>
+        </div>
+      </header>
+
+   <!-- ========== HOME SECTION ========== -->
+   <section id="home" class="section home-section">
+    <h2>Plug in. Power up. Welcome to the Tech Trolley Experience!</h2>
+    <p>At Tech Trolley, we’re passionate about bringing you the latest and greatest in technology. Our mission is to provide quality products with excellent customer service at affordable prices.</p>
+    <p>Your one-stop shop for the latest tech gadgets and accessories.</p>
+  </section>
+
+<!----------------HERO SECTION-->
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Discover the Latest Tech Gadgets</h1>
+            <p>Explore our premium collection of smartphones, laptops, headphones and more. Quality products at competitive prices.</p>
+            <div class="hero-buttons">
+                <a href="product.html" class="btn primary-btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Images/shared image (1).jpg" alt="Tech Gadgets" >
+        </div>
+    </div>
+</section>
+
+<!-- ========== PRODUCT CARD EXAMPLE ========== -->
+<section class="products-section">
+  <div class="product-grid">
+    <div class="product-card" data-category="Headphones">
+      <img src="Images/c1200cb7c0e722593d46acdb7f1c4580.jpg" alt="Volkano Headphones">
+      <h3>Volkano Falcon Aux Headphones</h3>
+      <p>R899</p>
+      <button class="add-to-cart-btn">
+        <i class='bx bx-cart'></i> Add to Cart
+      </button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+ 
+    <div class="product-card" data-category="headphones">
+      <img src="Images/shared image (5).jpg" alt="Amplify Headphones" />
+      <h3>Amplify Steller Series Headphones</h3>
+      <p>R4999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="headphones">
+      <img src="Images/b6d2fb1c59f75e411725da3ae033a6cd.jpg" alt="JBL Headphones" />
+      <h3>JBL Live 770NC noise cancelling</h3>
+      <p>R3799</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <!-- Laptops -->
+    <div class="product-card" data-category="laptops">
+      <img src="Images/c8be0ec1c57632ee81be32da25d3d435.jpg" alt="MacBook Pro Laptop" />
+      <h3>MacBook Pro 14" M2</h3>
+      <p>R24999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="laptops">
+      <img src="Images/fdfe814947bdf4b3750147224e17fe98.jpg" alt="Dell XPS Laptop" />
+      <h3>Dell XPS 15</h3>
+      <p>R19999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+      
+    </div>
+
+    <div class="product-card" data-category="laptops">
+      <img src="Images/50253ac0de45a6ff9a30b4bb375bc0b1.jpg" alt="HP Envy Laptop" />
+      <h3>HP Envy 13</h3>
+      <p>R15999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <!-- AirPods -->
+    <div class="product-card" data-category="airpods">
+      <img src="Images/f74b2d2d50d05d3a722d77447d7317a3.jpg" alt="JBL AirPods" />
+      <h3>JBL Airpods</h3>
+      <p>R3299</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="airpods">
+    <img src="Images/b1ff5240a025a166334af758abd8f111.jpg" alt="AirPods Max" />
+      <h3>Apple AirPods Pro</h3>
+      <p>R6499</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="airpods">
+    <img src="Images/d1b1f6a70993138d9f267339149a94c7.jpg" alt="Beats Powerbeats AirPods" />
+      <h3>Beats Powerbeats Pro</h3>
+      <p>R2499</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <!----------Watches-------->
+    <div class="product-card" data-category="watches">
+      <img src="Images/37a8ae2095512429d5d0ffa5d8675378.jpg" alt="Apple Watch" />
+      <h3>Apple Watch Series 8</h3>
+      <p>R6999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="watches">
+      <img src="Images/2a9c1c6769eabeb9ca78f521ba38f070.jpg" alt="Xiaomi Redmi Watch" />
+      <h3>Xiaomi Redmi Watch 5 Active</h3>
+      <p>R5999</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+    <div class="product-card" data-category="watches">
+      <img src="Images/cc5d51a8e94ffea5ccaf19d42eef3a55.jpg" alt="Samsung Galaxy Watch" />
+      <h3>Samsung Galaxy Fit3</h3>
+      <p>R2499</p>
+      <button class="add-to-cart-btn"><i class='bx bx-cart'></i> Add to Cart</button>
+      <button class="bookmark-btn">Bookmark</button>
+    </div>
+
+</section>
+  <main class="footer">
+<!-- ========== COMPARE SECTION ========== -->
+<section id="compare" class="section">
+  <div class="section-header">
+    <h2>Compare Gadgets</h2>
+    <p>Select products to compare their features</p>
+  </div>
+
+  <div class="bookmark-compare-grid">
+    <div class="comparison-box">
+      <h3>Comparison</h3>
+      <table id="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Product 1</th>
+            <th>Product 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Comparison data will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== FAVORITES AND COMPARISON SECTION ========== -->
+  <section class="favorites-section">
+    <h2>Favorites</h2>
+    <div id="favorites-list"></div>
+  </section>
+
+  </main>
+
+  <!-- ========== CART SECTION ========== -->
+  <div id="cart-box"></div>
+  <span id="cart-count">0</span>
+
+
+
+</body>
+</html>
